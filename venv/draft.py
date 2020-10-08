@@ -1,16 +1,13 @@
-from graphics import *
+altitudeInput = float(input("Enter altitude: "))
+measureInput = input("Enter measurement scale (M for meters, or F for feet): ")
 
-win = GraphWin("draft window", 350, 650)
+if measureInput == "M" or measureInput == "F":
+    if measureInput == "M":
+        boilPoint = altitudeInput / 300
+    else:
+        boilPoint = altitudeInput / 1000
+    print("Result: The boiling point of water dropped by %.2f" % boilPoint + "°C")
+else:
+    print("Error. Please input M or F for the measurement scale")
 
-rect = Rectangle(Point(10,30), Point(40,70))
-rect.setFill("blue")
-rect.draw(win)
 
-text = Text(Point(100, 50), "hoh")
-text.draw(win)
-
-line = Line(Point(50, 100), Point(100, 50))
-line.draw(win)
-
-win.getMouse()
-win.close()
