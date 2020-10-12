@@ -1,13 +1,23 @@
-altitudeInput = float(input("Enter altitude: "))
-measureInput = input("Enter measurement scale (M for meters, or F for feet): ")
+country = input("Enter country: ")
+vowel = "aeiouAEIOU"
 
-if measureInput == "M" or measureInput == "F":
-    if measureInput == "M":
-        boilPoint = altitudeInput / 300
-    else:
-        boilPoint = altitudeInput / 1000
-    print("Result: The boiling point of water dropped by %.2f" % boilPoint + "°C")
+if country.startswith(vowel) != -1:
+    print("l", country)
 else:
-    print("Error. Please input M or F for the measurement scale")
+    if country.endswith("e"):
+        if country == "Belize": print("le", country)
+        elif country == "Cambodge": print("le", country)
+        elif country == "Mexique": print("le", country)
+        elif country == "Mozambique": print("le", country)
+        elif country == "Zaïre": print("le", country)
+        elif country == "Zimbabwe": print("le", country)
+        else:
+            print("la", country)
+    elif country.endswith("s"):
+        print("les", country)
+    else:
+        print("le", country)
+
+
 
 

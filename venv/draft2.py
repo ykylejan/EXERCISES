@@ -1,22 +1,31 @@
-tempInput = float(input("Enter a temperature value: "))
-scaleInput = input("Enter a temperature scale (C for Celsius or F for Fahrenheit): ")
-temperature = ""
+country = input("Enter country: ")
+vowel = "aeiouAEIOU"
 
-if scaleInput == "C" or scaleInput == "F":
-    if scaleInput == "C":
-        if tempInput <= -2:
-            temperature = "Solid"
-        elif tempInput >= 100:
-            temperature = "Gaseous"
+if country.isalpha():
+    if country.startswith(vowel):
+        print("l", country)
+    else:
+        if country.endswith("e"):
+            if country == "Belize":
+                print("le", country)
+            elif country == "Cambodge":
+                print("le", country)
+            elif country == "Mexique":
+                print("le", country)
+            elif country == "Mozambique":
+                print("le", country)
+            elif country == "Zaïre":
+                print("le", country)
+            elif country == "Zimbabwe":
+                print("le", country)
+            else:
+                print("la", country)
+        elif country.endswith("s"):
+            print("les", country)
         else:
-            temperature = "Liquid"
-    elif scaleInput == "F":
-        if tempInput <= 28.4:
-            temperature = "Solid"
-        elif tempInput >= 212:
-            temperature = "Gaseous"
-        else:
-            temperature = "Liquid"
-    print("Result:", temperature)
+            print("le", country)
 else:
-    print("Error. Please input C or F for temperature scale.")
+    print("Error, country names only.")
+
+
+
