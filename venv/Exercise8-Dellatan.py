@@ -11,11 +11,10 @@ x = True
 while x == True:
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
-    numValue =
 
     operation = input("Select an operation (Addition, Subtraction, Multiplication, Division): ")
 
-    # Line 19-27 are the code segments for Addition and loop conditions
+    # Line 18-26 are the code segments for Addition and loop conditions
     if operation == "Addition":
         numValue = num1 + num2
         print("Result: %.2f" % numValue)
@@ -26,7 +25,7 @@ while x == True:
         else:
             x = False
 
-    # Line 30-38 are the code segments for Subtraction and loop conditions
+    # Line 29-37 are the code segments for Subtraction and loop conditions
     elif operation == "Subtraction":
         numValue = num1 - num2
         print("Result: %.2f" % numValue)
@@ -37,7 +36,7 @@ while x == True:
         else:
             x = False
 
-    # Line 41-49 are the code segments for Multiplication and loop conditions
+    # Line 40-48 are the code segments for Multiplication and loop conditions
     elif operation == "Multiplication":
         numValue = num1 * num2
         print("Result: %.2f" % numValue)
@@ -48,7 +47,7 @@ while x == True:
         else:
             x = False
 
-    # Line 52-60 are the code segments for Division and loop conditions
+    # Line 51-59 are the code segments for Division and loop conditions
     elif operation == "Division":
         numValue = num1 / num2
         print("Result: %.2f" % numValue)
