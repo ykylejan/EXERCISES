@@ -11,7 +11,7 @@ x = True
 while x == True:
     num1 = float(input("Enter the first number: "))
     num2 = float(input("Enter the second number: "))
-    numValue = 0
+    numValue =
 
     operation = input("Select an operation (Addition, Subtraction, Multiplication, Division): ")
 
@@ -69,9 +69,7 @@ print("-" * 180)
 # • Ask the user for their guess.
 # • If they guess correctly, print 'You win!' and break. Decrement guesses left by one. Else, print "You lose!"
 
-RANDOM_NUMBER = random.randint(0,100)
-correctNumber = RANDOM_NUMBER
-
+correctNumber = random.randint(0,100)
 attempt = 5
 
 while attempt > 0:
