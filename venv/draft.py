@@ -1,23 +1,29 @@
-country = input("Enter country: ")
-vowel = "aeiouAEIOU"
-
-if country.startswith(vowel) != -1:
-    print("l", country)
-else:
-    if country.endswith("e"):
-        if country == "Belize": print("le", country)
-        elif country == "Cambodge": print("le", country)
-        elif country == "Mexique": print("le", country)
-        elif country == "Mozambique": print("le", country)
-        elif country == "Zaïre": print("le", country)
-        elif country == "Zimbabwe": print("le", country)
-        else:
-            print("la", country)
-    elif country.endswith("s"):
-        print("les", country)
-    else:
-        print("le", country)
+# gameList = ["Final Fantasy XV","TEKKEN 7","Hollow Knight","Brawlhalla","Persona 5"]
+# i = 1
+#
+# for item in gameList:
+#     print("Game", i, "is", item)
+#     i = i+1
+#
+#
+# counter = 1
+#
+# while counter <= 10:
+#     print(counter)
+#     counter = counter + 1
 
 
+# sentence = input("Enter a sentence: ")
+#
+# for letter in sentence:
+#     if "A" == letter or "a" == letter:
+#         print("X", end="")
+#     else:
+#         print(letter, end="")
 
+x = range(128)
 
+for n in x:
+    print(chr(n), end="")
+print()
+print("-" * 180)
