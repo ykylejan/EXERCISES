@@ -100,7 +100,7 @@ print("-" * 180)
 x = range(128)
 
 for n in x:
-    print(chr(n), end="")
+    print(chr(n), end="") # Added end parameter in-order to append the space instead of new line
 print()
 print("-" * 180)
 ##
@@ -111,6 +111,6 @@ sentence = input("Enter a sentence: ")
 
 for letter in sentence:
     if "A" == letter or "a" == letter:
-        print("X", end="")
+        print("X", end="") # Added end parameter in-order to append the space instead of new line
     else:
         print(letter, end="")
